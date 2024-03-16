@@ -68,8 +68,11 @@ SteamOS comes packaged with a number of SystemD services, predominantly stored u
 
 ### steamos-customizations - systemd system
 
+ran `grep -r 'steamos-customizations is free software' /usr/lib/systemd/system/`
+
 ```bash
-(deck@deck etc)$ grep -r 'steamos-customizations is free software' /usr/lib/systemd/system/
+/usr/lib/systemd/system/rauc.service.d/override.conf:#  steamos-customizations is free software; you can redistribute it and/or
+/usr/lib/systemd/system/sddm.service.d/steamos-customizations.conf:#  steamos-customizations is free software; you can redistribute it and/or
 /usr/lib/systemd/system/etc.mount:#  steamos-customizations is free software; you can redistribute it and/or
 /usr/lib/systemd/system/home-swapfile.swap:#  steamos-customizations is free software; you can redistribute it and/or
 /usr/lib/systemd/system/opt.mount:#  steamos-customizations is free software; you can redistribute it and/or
@@ -78,23 +81,19 @@ SteamOS comes packaged with a number of SystemD services, predominantly stored u
 /usr/lib/systemd/system/steamos-boot.service:#  steamos-customizations is free software; you can redistribute it and/or
 /usr/lib/systemd/system/steamos-cfs-debugfs-tunings.service:#  steamos-customizations is free software; you can redistribute it and/or
 /usr/lib/systemd/system/steamos-create-homedir.service:#  steamos-customizations is free software; you can redistribute it and/or
+/usr/lib/systemd/system/steamos-dump-info.service:#  steamos-customizations is free software; you can redistribute it and/or
 /usr/lib/systemd/system/steamos-finish-oobe-migration.service:#  steamos-customizations is free software; you can redistribute it and/or
 /usr/lib/systemd/system/steamos-install-grub.service:#  steamos-customizations is free software; you can redistribute it and/or
 /usr/lib/systemd/system/steamos-install-steamcl.service:#  steamos-customizations is free software; you can redistribute it and/or
 /usr/lib/systemd/system/steamos-offload.target:#  steamos-customizations is free software; you can redistribute it and/or
 /usr/lib/systemd/system/steamos-settings-importer.service:#  steamos-customizations is free software; you can redistribute it and/or modify
-/usr/lib/systemd/system/steamos-update-os-plymouth.service:#  steamos-customizations is free software; you can redistribute it and/or
-/usr/lib/systemd/system/steamos-update-os.service:#  steamos-customizations is free software; you can redistribute it and/or
-/usr/lib/systemd/system/steamos-update-os.target:#  steamos-customizations is free software; you can redistribute it and/or
 /usr/lib/systemd/system/swapfile.service:#  steamos-customizations is free software; you can redistribute it and/or
-/usr/lib/systemd/system/usr-lib-debug.mount:#  steamos-customizations is free software; you can redistribute it and/or
-/usr/lib/systemd/system/usr-local.mount:#  steamos-customizations is free software; you can redistribute it and/or
 /usr/lib/systemd/system/var-cache-pacman.mount:#  steamos-customizations is free software; you can redistribute it and/or
 /usr/lib/systemd/system/var-lib-docker.mount:#  steamos-customizations is free software; you can redistribute it and/or
 /usr/lib/systemd/system/var-lib-flatpak.mount:#  steamos-customizations is free software; you can redistribute it and/or
 /usr/lib/systemd/system/var-lib-systemd-coredump.mount:#  steamos-customizations is free software; you can redistribute it and/or
 /usr/lib/systemd/system/var-log.mount:#  steamos-customizations is free software; you can redistribute it and/or
 /usr/lib/systemd/system/var-tmp.mount:#  steamos-customizations is free software; you can redistribute it and/or
-/usr/lib/systemd/system/rauc.service.d/override.conf:#  steamos-customizations is free software; you can redistribute it and/or
-/usr/lib/systemd/system/sddm.service.d/steamos-customizations.conf:#  steamos-customizations is free software; you can redistribute it and/or
+/usr/lib/systemd/system/nix.mount:#  steamos-customizations is free software; you can redistribute it and/or
+
 ```
